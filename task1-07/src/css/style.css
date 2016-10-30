@@ -1,0 +1,901 @@
+body > * {
+    width: 100%;
+    min-width: 1280px;
+    /*compatible with IE7-*/
+    _width: 1280px;
+    zoom: 1;
+    font-family: "Microsoft YaHei";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-somooth: grayscale;
+}
+
+body > * button,
+body > * label,
+body > * .select-in,
+body > * .top-nav > li,
+body > * .social-club > i,
+body > * .login {
+    cursor: pointer;
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    transistion: background-color 0.5s ease-in-out;
+}
+
+body > * .bar {
+    -webkit-transition: width 0.5s ease-in-out;
+    -moz-transition: width 0.5s ease-in-out;
+    transistion: width 0.5s ease-in-out;
+}
+
+header {
+    background-color: white;
+    line-height: 56px;
+    position: relative;
+}
+
+header .logo {
+    font-size: 21px;
+    font-family: "SimHei";
+    color: #393a3a;
+}
+
+header .logo div.icon-logo {
+    float: left;
+    margin: 10px 12px 0 60px;
+    height: 31px;
+    width: 31px;
+    background-image: url("../img/min_logo.png");
+}
+
+header nav {
+    position: absolute;
+    right: 130px;
+    top: 0px;
+}
+
+header nav ul {
+    /*compatible with IE7-*/
+}
+
+header nav ul li {
+    display: inline-block;
+    width: 66px;
+    margin: 0 12px;
+    font-size: 14px;
+    text-align: center;
+    color: #767777;
+    line-height: 52px;
+}
+
+header nav ul li:hover {
+    color: #e74f4d;
+}
+
+header nav ul li {
+    *display: inline;
+    *zoom: 1;
+}
+
+header nav ul li:nth-child(2):hover ~ .bar {
+    left: 90px;
+}
+
+header nav ul li:nth-child(3):hover ~ .bar {
+    left: 180px;
+}
+
+header nav ul li:nth-child(4):hover ~ .bar {
+    left: 270px;
+}
+
+header nav ul li:nth-child(5):hover ~ .bar {
+    left: 360px;
+}
+
+header nav ul .bar {
+    position: absolute;
+    left: 0;
+    top: 53.5px;
+    height: 3px;
+    background-color: #e74f4d;
+    -webkit-transition: left 0.4s ease-in-out;
+    -moz-transition: left 0.4s ease-in-out;
+    transition: left 0.4s ease-in-out;
+}
+
+header .login {
+    position: absolute;
+    right: 66px;
+    top: 0px;
+    font-size: 14px;
+    color: #e74f4d;
+    font-family: "Microsoft YaHei";
+}
+
+header .login i {
+    position: relative;
+    top: 3px;
+    right: 5px;
+    display: inline-block;
+    width: 14px;
+    height: 17px;
+    background-image: url(../img/login_icon.png);
+}
+
+.section1 {
+    height: 690px;
+    background-image: url(../img/1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.section1 .content {
+    padding: 228px 118px;
+    width: 500px;
+}
+
+.section1 .content .title {
+    margin-bottom: 22px;
+    font-size: 60px;
+    color: white;
+}
+
+.section1 .content .phrase {
+    margin-left: 8px;
+    line-height: 33px;
+    font-size: 21px;
+    color: #fffdfd;
+}
+
+.section1 .content .btn {
+    margin-top: 60px;
+    width: 332px;
+    height: 64px;
+    background-color: #e74f4d;
+    font-size: 30px;
+    line-height: 64px;
+    text-align: center;
+    color: white;
+}
+
+.section1 .content .btn:hover {
+    background-color: #e12320;
+}
+
+.section2 {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 66px;
+    font-family: "SimHei";
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #767777;
+}
+
+.section2 .items .icon {
+    height: 42px;
+    width: 42px;
+    margin: 46px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section2 .items .phrase {
+    width: 154px;
+    height: 52px;
+    padding: 0 85px;
+    border-left: solid 1px #aaaaaa;
+}
+
+.section2 .icon1 {
+    background-image: url(../img/icon1.png);
+}
+
+.section2 .icon1 + .phrase {
+    border-left: none;
+}
+
+.section2 .icon2 {
+    background-image: url(../img/icon2.png);
+}
+
+.section2 .icon3 {
+    background-image: url(../img/icon3.png);
+}
+
+.section2 .icon4 {
+    background-image: url(../img/icon4.png);
+}
+
+.section3 {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 360px;
+    background: #ededed;
+    color: rgba(50, 51, 51, 0.502);
+    font-size: 54px;
+}
+
+.section3 .logo {
+    margin: 50px 0 90px 0;
+    height: 91px;
+    width: 91px;
+    background-image: url(../img/logo.png);
+}
+
+.section4 {
+    height: 340px;
+    background-image: url(../img/2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+.section4 .big-msg .title {
+    padding: 50px 0 10px 0;
+    font-size: 21px;
+    color: white;
+}
+
+.section4 .big-msg .title:hover + .bar {
+    width: 200px;
+}
+
+.section4 .big-msg .bar {
+    width: 30px;
+    height: 2px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.section4 .phrase {
+    margin: 20px 0 50px 0;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.section4 .search-box {
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.section4 .search-box > * {
+    margin: 0 15px;
+    width: 236px;
+    border: solid 2px transparent;
+}
+
+.section4 .search-box .select:hover {
+    border: solid 2px #e74f4d;
+}
+
+.section4 .search-box .select:hover:hover .select-ul {
+    display: block;
+}
+
+.section4 .search-box .select:hover:hover .icon-select {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.section4 .search-box .select-in {
+    position: relative;
+    display: inline-block;
+    height: 36px;
+    width: 226px;
+    padding-left: 10px;
+    background-color: white;
+    font-size: 12px;
+    line-height: 36px;
+    color: #a8aaaa;
+}
+
+.section4 .search-box .select-in .icon-select {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    border-radius: 1px;
+    background-color: #e74f4d;
+    background-image: url(../img/icon10.png);
+    background-repeat: no-repeat;
+    background-position: 2px;
+}
+
+.section4 .search-box .search-btn {
+    margin-top: 2px;
+    height: 36px;
+    background-color: #e74f4d;
+    color: white;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.section4 .search-box .search-btn:hover {
+    background-color: #e12320;
+}
+
+.section4 .search-box .select-ul {
+    display: none;
+    background-color: #e3e3e3;
+    color: rgba(50, 51, 51, 0.502);
+    font-size: 12px;
+}
+
+.section4 .search-box .choose {
+    padding-left: 34px;
+    line-height: 26px;
+}
+
+.section4 .search-box .choose:hover {
+    background-color: #e74f4d;
+    color: white;
+}
+
+.section4 .search-box .chosen {
+    background-color: #e74f4d;
+    background-image: url(../img/icon9.png);
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    color: white;
+}
+
+.section5 .city-active-box {
+    display: flex;
+    justify-content: center;
+    padding: 102px 0 114px 0;
+    background-color: #f7f7f7;
+}
+
+.section5 .city-active-box .img-active {
+    margin: 0 20px;
+    text-align: center;
+}
+
+.section5 .city-active-box .img-active .active-picture {
+    padding: 10px 8px;
+    width: 203px;
+    height: 312px;
+    background-color: white;
+}
+
+.section5 .city-active-box .img-active .title {
+    font-size: 14px;
+    line-height: 40px;
+    width: 203px;
+    margin: auto;
+}
+
+.section5 .city-active-box .img-active .msg {
+    font-size: 12px;
+    color: #aaaaaa;
+}
+
+.section5 .city-active-box .img-active.img-down-active .active-picture {
+    height: 307px;
+}
+
+.section5 .city-active-box .img-active.img-down-active .title {
+    position: relative;
+    left: 12px;
+    font-size: 20px;
+    letter-spacing: 30px;
+}
+
+.section5 .city-active-box .img-active.img-down-active .msg {
+    line-height: 28px;
+}
+
+.section6 .about-1 {
+    height: 564px;
+}
+
+.section6 .about-1 .img-box {
+    float: left;
+    width: 66.4%;
+    height: 568px;
+    background-image: url(../img/7.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+}
+
+.section6 .about-1 .img-box > * {
+    text-align: center;
+}
+
+.section6 .about-1 .img-box h1 {
+    margin-bottom: 22px;
+    font-size: 158px;
+    font-weight: normal;
+}
+
+.section6 .about-1 .img-box h3 {
+    margin: 132px 0 -10px 0;
+    font-size: 48px;
+    font-weight: normal;
+}
+
+.section6 .about-1 .img-box p {
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+.section6 .about-1 .msg {
+    position: relative;
+    float: left;
+    width: 33.6%;
+    height: 568px;
+    background-color: white;
+}
+
+.section6 .about-1 .msg article {
+    display: none;
+    margin: 0 64px;
+    font-size: 12px;
+    font-family: "SimSun";
+    line-height: 30px;
+    color: #aaaaaa;
+}
+
+.section6 .about-1 .msg article .content {
+    height: 162px;
+    overflow: hidden;
+}
+
+.section6 .about-1 .msg article .title {
+    margin-top: 144px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 60px;
+    color: #000;
+}
+
+.section6 .about-1 .msg article .icon-11 {
+    position: relative;
+    top: 4px;
+    left: -2px;
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background-image: url(../img/icon11.png);
+}
+
+.section6 .about-1 .msg article .num {
+    color: #e74f4d;
+}
+
+.section6 .about-1 input:checked + i {
+    background-color: #aaaaaa;
+}
+
+.section6 .about-1 .radio-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+.section6 .about-1 .radio {
+    display: block;
+    height: 12px;
+    width: 12px;
+    margin: 8px;
+    border-radius: 50%;
+    border: solid 1px #aaaaaa;
+}
+
+.section6 .about-1 input:checked + article {
+    display: block;
+}
+
+.section6 .about-1 #tab-1:checked ~ .radio-box > .radio:nth-child(1) {
+    background-color: #aaaaaa;
+}
+
+.section6 .about-1 #tab-2:checked ~ .radio-box > .radio:nth-child(2) {
+    background-color: #aaaaaa;
+}
+
+.section6 .about-1 #tab-3:checked ~ .radio-box > .radio:nth-child(3) {
+    background-color: #aaaaaa;
+}
+
+.section6 .about-1 button {
+    display: block;
+    margin: 0 auto;
+    width: 104px;
+    height: 32px;
+    border: solid 1px #e74f4d;
+    background-color: white;
+    text-align: center;
+    font-size: 12px;
+    line-height: 30px;
+    color: #e74f4d;
+}
+
+.section6 .about-1 button:hover {
+    background-color: #e74f4d;
+    color: white;
+}
+
+.section6 .about-2 {
+    height: 524px;
+}
+
+.section6 .about-2 .msg {
+    float: left;
+    width: 33.2%;
+    height: 524px;
+    font-size: 21px;
+    font-family: "SimHei";
+    color: white;
+}
+
+.section6 .about-2 .msg * {
+    width: 170px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section6 .about-2 .msg button {
+    display: block;
+    height: 40px;
+    background-color: transparent;
+    border: solid 1px white;
+    font-size: 21px;
+    font-family: "SimHei";
+    color: white;
+}
+
+.section6 .about-2 .msg .title {
+    padding: 176px 0 10px 0;
+}
+
+.section6 .about-2 .msg .bar {
+    height: 2px;
+    width: 14px;
+    margin: 24px auto;
+}
+
+.section6 .about-2 .msg-1 {
+    background-color: #e74f4d;
+    color: white;
+}
+
+.section6 .about-2 .msg-1 button:hover {
+    background-color: white;
+    border: solid 1px #e74f4d;
+    color: #e74f4d;
+}
+
+.section6 .about-2 .msg-2 {
+    color: #e74f4d;
+}
+
+.section6 .about-2 .msg-2 button {
+    background-color: transparent;
+    border: solid 1px #e74f4d;
+    color: #e74f4d;
+}
+
+.section6 .about-2 .msg-2 button:hover {
+    background-color: #e74f4d;
+    color: white;
+}
+
+.section6 .about-2 .img-box {
+    float: left;
+    width: 33.6%;
+    height: 524px;
+    background-image: url(../img/8.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.section7 {
+    height: 750px;
+}
+
+.section7 p:first-child {
+    padding-top: 120px;
+    font-size: 21px;
+    font-family: "SimHei";
+    text-align: center;
+    color: #323333;
+}
+
+.section7 p:first-child:hover + .bar {
+    width: 140px;
+}
+
+.section7 .slogan {
+    width: 422px;
+    margin: 0 auto;
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    color: #aaaaaa;
+    line-height: 20px;
+    text-align: center;
+}
+
+.section7 .bar {
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin: 10px auto;
+    background-color: #e74f4d;
+}
+
+.section7 .apply-box {
+    width: 1002px;
+    margin: 0 auto;
+    padding-top: 102px;
+}
+
+.section7 .apply-box aside {
+    float: left;
+    width: 290px;
+    margin-right: 75px;
+}
+
+.section7 .apply-box .rule {
+    margin-bottom: 38px;
+}
+
+.section7 .apply-box .rule .title {
+    margin-bottom: 18px;
+    padding: 0px;
+    font-size: 14px;
+    font-family: "SimHei";
+    color: rgba(35, 24, 21, 0.8);
+    line-height: 22px;
+    text-align: left;
+}
+
+.section7 .apply-box .rule .content {
+    position: relative;
+    height: 44px;
+    overflow: hidden;
+    font-size: 12px;
+    font-family: "SimSun";
+    line-height: 22px;
+    color: rgba(35, 24, 21, 0.6);
+}
+
+.section7 .apply-box .rule .content::after {
+    content: "......";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-left: 1px;
+    background-color: white;
+}
+
+.section7 .apply-box .rule .more-rule {
+    height: 0;
+    overflow: hidden;
+}
+
+.section7 .apply-box .rule input[type=radio]:checked + div {
+    height: auto;
+}
+
+.section7 .apply-box .rule input[type=radio]:checked + div::after {
+    content: "";
+}
+
+.section7 .apply-box .rule label {
+    position: relative;
+    left: 246px;
+    height: 12px;
+    display: block;
+    margin-top: 5px;
+    width: 48px;
+    background-image: url(../img/down.png);
+    background-repeat: no-repeat;
+    background-position-y: 5px;
+    font-size: 12px;
+    color: rgba(35, 24, 21, 0.6);
+    text-align: right;
+}
+
+.section7 form {
+    width: 636px;
+    float: left;
+    font-size: 12px;
+    font-family: "SimSun";
+    color: rgba(35, 24, 21, 0.8);
+}
+
+.section7 form ::-webkit-input-placeholder {
+    /* WebKit browsers */
+    font-size: 12px;
+    font-family: "SimSun";
+    color: rgba(35, 24, 21, 0.8);
+}
+
+.section7 form :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    font-size: 12px;
+    font-family: "SimSun";
+    color: rgba(35, 24, 21, 0.8);
+}
+
+.section7 form ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    font-size: 12px;
+    font-family: "SimSun";
+    color: rgba(35, 24, 21, 0.8);
+}
+
+.section7 form :-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    font-size: 12px;
+    font-family: "SimSun";
+    color: rgba(35, 24, 21, 0.8);
+}
+
+.section7 form * {
+    background-color: #ededed;
+    margin-bottom: 15px;
+    border: solid 1px transparent;
+    border-radius: 2px;
+}
+
+.section7 form *:focus {
+    border: solid 1px #aaaaaa;
+    background-color: white;
+    outline: none;
+}
+
+.section7 form input {
+    width: 296px;
+    height: 40px;
+    padding-left: 14px;
+}
+
+.section7 form input:nth-child(2n+1) {
+    float: left;
+}
+
+.section7 form input:nth-child(2n) {
+    float: right;
+}
+
+.section7 form textarea {
+    width: 608px;
+    height: 120px;
+    padding: 0 14px;
+    line-height: 32px;
+}
+
+.section7 form button {
+    width: 636px;
+    height: 38px;
+    text-align: center;
+    font-size: 14px;
+    font-family: "SimHei";
+    color: #323333;
+}
+
+.section7 form button:hover {
+    background-color: #e3e3e3;
+}
+
+.section8 {
+    height: 360px;
+    background-color: #32363e;
+}
+
+.section8 > * {
+    width: 512px;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.section8 p {
+    width: 470px;
+    padding: 84px 0 28px 0;
+    margin: auto;
+    font-size: 12px;
+    font-family: "SimSun";
+    line-height: 18px;
+    letter-spacing: 2px;
+}
+
+.section8 p:first-line {
+    font-size: 21px;
+    font-family: "SimHei";
+    line-height: 37px;
+}
+
+.section8 .summit-box input {
+    width: 430px;
+    height: 40px;
+}
+
+.section8 .summit-box button {
+    width: 80px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 15px;
+    font-family: "Microsoft YaHei";
+    letter-spacing: 9px;
+    background-color: #6f7178;
+    color: white;
+}
+
+.section8 .social-club {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.section8 .social-club > * {
+    margin: 9px;
+}
+
+.section8 .social-club .qq-icon {
+    width: 24px;
+    height: 25px;
+    background-image: url(../img/icon7.png);
+}
+
+.section8 .social-club .wb-icon {
+    width: 29px;
+    height: 25px;
+    background-image: url(../img/icon8.png);
+}
+
+.section8 .social-club .tr-icon {
+    width: 29px;
+    height: 25px;
+    background-image: url(../img/icon6.png);
+}
+
+.section8 .social-club .web-icon {
+    width: 24px;
+    height: 25px;
+    background-image: url(../img/icon5.png);
+}
+
+.foot {
+    height: 58px;
+    background-color: #30303a;
+}
+
+.foot p {
+    color: white;
+    font-size: 12px;
+    line-height: 58px;
+}
+
+.foot .foot-left {
+    float: left;
+    margin-left: 98px;
+}
+
+.foot .foot-right {
+    float: right;
+    margin-right: 38px;
+}
+
+.foot .foot-right a {
+    color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
