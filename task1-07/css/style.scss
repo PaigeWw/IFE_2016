@@ -392,6 +392,23 @@ header{
   }
 }
 .section6{
+  .head-box{
+    position: relative;
+  }
+  .head{
+    position: absolute;
+    top: 268px;
+    width: 26px;
+    height: 31px;
+  }
+  .head-1{
+    left: -25px;
+    background-image: url(../img/msg_head.png);
+  }
+  .head-2{
+    left: -1px;
+    background-image: url(../img/head.png);
+  }
   .about-1{
     height: 564px;
 
