@@ -1,0 +1,55 @@
+/*variable definition*/
+$height: 50px;
+$innerSpace: 10px;
+$borderWidth: 1px;
+$borderColor: #999999;
+$backgroundColor: #eeeeee;
+
+@mixin innerStyle{
+  height: $height;
+  margin: $innerSpace;
+  background-color: $backgroundColor;
+  border: solid $borderWidth  $borderColor;
+}
+@mixin colBase{
+  float: left;
+  display: block;
+  min-height: 1px;
+}
+@mixin makeGrid($small_scr){
+  @if $small_scr{
+    @for $i from 1 through 12{
+      .col-md-#{$i}{
+        @include colBase;
+        width: (100% / 12 * $i);
+      }
+    }
+  }@else{
+      @for $i from 1 through 12{
+        .col-sm-#{$i}{
+          @include colBase;
+          width: (100% / 12 * $i);
+        }
+      }
+  }
+}
+body,
+html{
+  margin: 0;
+  padding: 0;
+}
+.inner{
+  @include innerStyle;
+}
+
+//grid-col
+.grid-wrapper{
+  padding: $innerSpace;
+  @media only screen and (max-width: 768px) {
+    @include makeGrid(true);
+  }
+  @media only screen and (min-width: 769px) {
+    @include makeGrid(false);
+  }
+}
+

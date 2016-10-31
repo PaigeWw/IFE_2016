@@ -1,0 +1,191 @@
+/*variable definition*/
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.inner {
+    height: 50px;
+    margin: 10px;
+    background-color: #eeeeee;
+    border: solid 1px #999999;
+}
+
+.grid-wrapper {
+    padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .grid-wrapper .col-md-1 {
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 8.33333%;
+    }
+
+    .grid-wrapper .col-md-2 {
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 16.66667%;
+    }
+
+    .grid-wrapper .col-md-3 {
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 25%;
+    }
+
+    .grid-wrapper .col-md-4 {
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 33.33333%;
+    }
+
+    .grid-wrapper .col-md-5 {
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 41.66667%;
+    }
+
+    .grid-wrapper .col-md-6 {
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 50%;
+    }
+
+    .grid-wrapper .col-md-7 {
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 58.33333%;
+    }
+
+    .grid-wrapper .col-md-8 {
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 66.66667%;
+    }
+
+    .grid-wrapper .col-md-9 {
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 75%;
+    }
+
+    .grid-wrapper .col-md-10 {
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 83.33333%;
+    }
+
+    .grid-wrapper .col-md-11 {
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 91.66667%;
+    }
+
+    .grid-wrapper .col-md-12 {
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .grid-wrapper .col-sm-1 {
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 8.33333%;
+    }
+
+    .grid-wrapper .col-sm-2 {
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 16.66667%;
+    }
+
+    .grid-wrapper .col-sm-3 {
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 25%;
+    }
+
+    .grid-wrapper .col-sm-4 {
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 33.33333%;
+    }
+
+    .grid-wrapper .col-sm-5 {
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 41.66667%;
+    }
+
+    .grid-wrapper .col-sm-6 {
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 50%;
+    }
+
+    .grid-wrapper .col-sm-7 {
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 58.33333%;
+    }
+
+    .grid-wrapper .col-sm-8 {
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 66.66667%;
+    }
+
+    .grid-wrapper .col-sm-9 {
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 75%;
+    }
+
+    .grid-wrapper .col-sm-10 {
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 83.33333%;
+    }
+
+    .grid-wrapper .col-sm-11 {
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 91.66667%;
+    }
+
+    .grid-wrapper .col-sm-12 {
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 100%;
+    }
+}
+
+/*# sourceMappingURL=grid.css.map */
