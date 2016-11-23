@@ -1,0 +1,121 @@
+body{
+    font-family: "Microsoft YaHei UI";
+    color: #f7f3f5;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 60%;
+    min-height: 400px;
+    margin: 80px auto;
+    border-radius: 4px;
+    box-shadow: 0 0 20px #c7cad7;
+    overflow: hidden;
+}
+header{
+    text-align: center;
+    background-color: #202f44;
+}
+header p{
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+header label{
+    padding: 10px;
+
+}
+input{
+    outline: none;
+
+}
+header button{
+    background-color: #fd444b;
+    outline: none;
+    border: solid 1px #c7cad7;;
+    border-radius: 2px;
+    padding: 1px 6px;
+    color: #fff;
+    height: 21px;
+}
+.content{
+    padding: 20px;
+    min-height: 320px;
+    color: #050612;
+}
+footer{
+    min-height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #fd444b;
+}
+.hide{
+    display: none;
+}
+span{
+    display: inline-block;
+    cursor: pointer;
+    min-width: 30px;
+    text-align: center;
+}
+i{
+    font-size: larger;
+    padding: 4px;
+    cursor: pointer;
+}
+.highlight{
+    color: #fd444b;
+}
+.prop-bg{
+    background-color: rgba(255,255,255,0.4);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+.prop{
+    position: fixed;
+    top:200px;
+    left: 30%;
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    z-index: 10;
+    color: #050612;
+    background-color: #fff;
+    border-radius: 4px;
+    border: solid 1px #202f44;
+    overflow: hidden;
+    font-size: 14px;
+}
+.prop .prop-body{
+    padding: 50px;
+}
+.prop .title{
+    padding: 4px;
+    text-align: center;
+    line-height: 30px;
+    color: #f7f3f5;
+    background-color: #202f44;
+}
+.prop .btns{
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.prop .btns input{
+    display: inline-block;
+    width: 80px;
+    height: 26px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    font-family: "Microsoft YaHei UI";
+    background-color:  #202f44;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
