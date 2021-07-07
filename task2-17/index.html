@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>17</title>
+	<link rel="stylesheet" href="css/17.css">
+</head>
+<body>
+	<header>
+		<h1>IFE_2016 Task-17</h1>
+	</header>
+
+	<form class="form-ground" id="form">
+			<label>选择粒度（日/周/月）</label>
+			<input type="radio" class="jdy" id="time1" name="time" hidden checked="checked" value="day"><label for="time1">
+				<i></i>
+				<span>日</span>
+			</label>
+			<input value="week" type="radio" class="jdy" id="time2" name="time" hidden><label for="time2">
+				<i></i>
+				<span>周</span>
+			</label>
+			<input value="month" type="radio" class="jdy" id="time3" name="time" hidden><label for="time3">
+				<i></i>
+				<span>月</span>
+			</label >
+				<label class="city-lab">城市:</label> <select class="city" id="city-select">
+			</select>
+	</form>
+	<section>
+		<div class="graph" id="chart-box">
+			<div id="chart-inner"></div>
+		</div>		
+	</section>
+	<div class="color-box">
+		<div style="background-color:#E5E6E8"></div>
+		<div style="background-color:#60A0B9"></div>
+		<div style="background-color:#6A6CA9"></div>
+		<div style="background-color:#9696A5"></div>
+		<div style="background-color:#857DC0"></div>
+	</div>
+</body>
+<script src="js/17.js"></script>
+</html>

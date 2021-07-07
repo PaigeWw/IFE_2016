@@ -1,0 +1,99 @@
+input[type=radio].jdy,input[type=checkbox].jdy{
+    opacity: 0;
+}
+input[type=radio].jdy + label,input[type=checkbox].jdy+label{
+    display: inline;
+    margin-right: 20px;
+}
+input[type=radio].jdy + label>i{
+    position: relative;
+    top: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 4px;
+    background-clip: content-box;
+    border: 1px solid #999;
+}
+input[type=radio]:checked.jdy + label>i{
+    background-color: #60A0B9;
+    background-clip:content-box;
+}
+
+/*css*/
+body{
+    font-family: "YaHei","微软雅黑";
+    background-color: #454442;
+    color: #E5E6E8;
+    padding: 20px;
+}
+.color-box>div{
+    width: 50px;
+    height: 20px;
+}
+.city-lab{
+    margin-left: 40px;
+}
+.city{
+    height:30px;
+    width: 80px;
+    margin: 0 16px;
+    font-family: "YaHei","微软雅黑";
+    font-size: 14px;
+    background-color: #454442;
+    color: #E5E6E8;
+}
+.form-ground{
+    margin: 30px;
+}
+.graph {
+    display: flex;
+    align-items: flex-end;
+
+    height: 400px;
+    width: 1000px;
+    margin-left: 160px;
+    margin-top: 30px;
+    border-left: 1px solid #E5E6E8;
+    border-bottom: 1px solid #E5E6E8;
+}
+.color-box{
+    position: absolute;
+    top: 400px;
+}
+.chart-inner{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 1000px;
+}
+.day div{
+    background: #60A0B9;
+    width: 10px;
+    display: flex;
+}
+.week div{
+    background: #9696A5;
+    width: 50px;
+    display: flex;
+}
+.month div{
+    background: #6A6CA9;
+    width: 100px;
+    display: flex;
+}
+.tipText {
+    position: relative;
+    top: -24px;
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #9696A5;
+    border-radius: 5px;
+    z-index: 10;
+}
